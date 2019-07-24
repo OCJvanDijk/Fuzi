@@ -1,5 +1,6 @@
 module libxml2
 {
-    umbrella "${SDKROOT}/usr/include/libxml2"
+    umbrella "${SDKROOT}/usr/include/libxml2/libxml"
     link "xml2"
+    export *
 }

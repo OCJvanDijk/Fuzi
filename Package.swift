@@ -17,7 +17,7 @@ let package = Package(
             linkerSettings: [.linkedLibrary("xml2")]
         ),
         .systemLibrary(
-            name: "CLibxml2",
+            name: "libxml2",
             pkgConfig: "libxml2"
         ),
         .testTarget(name: "FuziTests",

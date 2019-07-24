@@ -9,13 +9,15 @@ let package = Package(
         .library(name: "Fuzi", targets: ["Fuzi"]),
     ],
     targets: [
-        .target(name: "Fuzi",
-            path: "Sources",
-            dependencies: ["libxml2"]
+        .target(
+            name: "Fuzi",
+            dependencies: ["libxml2"],
+            path: "Sources"
         ),
         .systemLibrary(
             name: "libxml2",
-            pkgConfig: "libxml2"
+            pkgConfig: "libxml2",
+            path: "Sources"
         ),
         .testTarget(name: "FuziTests",
                     dependencies: ["Fuzi"],

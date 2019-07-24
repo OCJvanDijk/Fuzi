@@ -16,7 +16,7 @@ let package = Package(
         ),
         .systemLibrary(
             name: "libxml2",
-            path: "Sources",
+            path: "CLibxml2",
             pkgConfig: "libxml2"
         ),
         .testTarget(name: "FuziTests",

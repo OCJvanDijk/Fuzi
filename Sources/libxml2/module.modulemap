@@ -1,5 +1,5 @@
 module libxml2 [system]
 {
-    header "libxml2.h"
+    header "$(SDKROOT)/usr/include/libxml2"
     link "xml2"
 }

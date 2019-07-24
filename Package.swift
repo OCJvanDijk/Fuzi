@@ -16,8 +16,8 @@ let package = Package(
         ),
         .systemLibrary(
             name: "libxml2",
-            pkgConfig: "libxml2",
-            path: "Sources"
+            path: "Sources",
+            pkgConfig: "libxml2"
         ),
         .testTarget(name: "FuziTests",
                     dependencies: ["Fuzi"],

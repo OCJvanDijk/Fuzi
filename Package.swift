@@ -16,7 +16,7 @@ let package = Package(
         ),
         .systemLibrary(
             name: "libxml2",
-            path: "CLibxml2",
+            path: "${SDKROOT}/usr/include/libxml2",
             pkgConfig: "libxml2"
         ),
         .testTarget(name: "FuziTests",

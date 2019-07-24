@@ -11,10 +11,7 @@ let package = Package(
     targets: [
         .target(name: "Fuzi",
             path: "Sources",
-            
-            // Headers and linking for libxml2
-            cSettings: [.headerSearchPath("$(SDKROOT)/usr/include/libxml2")],
-            linkerSettings: [.linkedLibrary("xml2")]
+            dependencies: ["libxml2"]
         ),
         .systemLibrary(
             name: "libxml2",
